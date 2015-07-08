@@ -1,0 +1,30 @@
+<div class="login-view">
+    <md-content class="md-padding">
+        <img class="logo" src="img/logo.svg" alt=""/>
+
+        <md-card>
+            <h1>Log In</h1>
+            <md-card-content>
+
+                <form name="loginForm">
+
+                    <md-input-container class="md-icon-float">
+                        <label>Adresse Email</label>
+                        <md-icon ng-style="{color: '#014157'}" md-font-set="material-icons">account_circle</md-icon>
+                        <input ng-model="user.username" type="text">
+                    </md-input-container>
+
+                    <md-input-container class="md-icon-float">
+                        <label>Mot de passe</label>
+                        <md-icon ng-style="{color: '#014157'}" md-font-set="material-icons">gesture</md-icon>
+                        <input ng-model="user.pwd" type="password">
+                    </md-input-container>
+
+                    <md-button ng-click="login()" class="md-raised md-primary">Connexion</md-button>
+
+                </form>
+
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>
