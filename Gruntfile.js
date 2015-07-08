@@ -6,6 +6,7 @@ var vendor = [
     'bower_components/angular-resource/angular-resource.js',
     'bower_components/angular-animate/angular-animate.js',
     'bower_components/angular-aria/angular-aria.js',
+    'bower_components/angular-messages/angular-messages.min.js',
     'bower_components/angular-material/angular-material.min.js'
 ];
 
