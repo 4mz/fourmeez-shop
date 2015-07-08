@@ -1,0 +1,49 @@
+<div class="toolbar">
+    <md-toolbar>
+        <md-fab-actions class="md-toolbar-tools">
+            <md-button ng-disabled="true" aria-label="comment" class="md-icon-button">
+                <md-icon md-font-set="material-icons">store</md-icon>
+            </md-button>
+            <md-button aria-label="label" class="md-icon-button">
+                <md-icon md-font-set="material-icons">group_add</md-icon>
+            </md-button>
+        </md-fab-actions>
+    </md-toolbar>
+</div>
+
+<div class="shop-view">
+
+    <md-content class="md-padding">
+        <md-card>
+            <h1>Magasin</h1>
+            <md-card-content>
+
+                <form name="shopForm">
+
+                    <md-input-container class="md-icon-float">
+                        <label>Nom</label>
+                        <md-icon ng-style="{color: '#014157'}" md-font-set="material-icons">store</md-icon>
+                        <input ng-model="shop.name" type="text">
+                    </md-input-container>
+
+                    <md-input-container class="md-icon-float">
+                        <label>Adresse</label>
+                        <md-icon ng-style="{color: '#014157'}" md-font-set="material-icons">location_city</md-icon>
+                        <input ng-model="shop.address" type="text">
+                    </md-input-container>
+
+                    <md-input-container class="md-icon-float">
+                        <label>Message du service pause</label>
+                        <md-icon ng-style="{color: '#014157'}" md-font-set="material-icons">mood</md-icon>
+                        <input ng-model="shop.desc" type="text">
+                    </md-input-container>
+
+                    <md-button ng-click="save()" class="md-raised md-primary">Sauvegarder</md-button>
+
+                </form>
+
+            </md-card-content>
+        </md-card>
+    </md-content>
+
+</div>
